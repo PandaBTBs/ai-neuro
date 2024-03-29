@@ -69,8 +69,8 @@ if you want to see the voice list of VoiceVox you can check this [VoiceVox](http
 7. Choose which translator you want to use depends on your use case (optional if you need translation for the answers). Choose between google translate or deeplx. You need to convert the answer to Japanese if you want to use `VoiceVox`, because VoiceVox only accepts input in Japanese. The language answer from OpenAI will depens on your assistant lore language `characterConfig\Pina\identity.txt` and the input language
 
 ```
-tts = translate_deeplx(text, f"{detect}", "JA")
-tts = translate_google(text, f"{detect}", "JA")
+tts = translate_deeplx(text, f"{detect}", "RU") EN JP
+tts = translate_google(text, f"{detect}", "RU") EN JP
 ```
 
 `DeepLx` is free version of `DeepL` (No API Key Required). You can run [Deeplx](https://github.com/OwO-Network/DeepLX) on docker, or if you want to use the normal version of deepl, you can make the function on `utils\translate.py`. I use `DeepLx` because i can't register on `DeepL` from my country. The translate result from `DeepL` is more accurate and casual than Google Translate. But if you want the simple way, just use Google Translate.
