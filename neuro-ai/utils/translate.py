@@ -55,5 +55,4 @@ def detect_google(text):
 if __name__ == "__main__":
     text = "aku tidak menyukaimu"
     source = translate_deeplx(text, "RU", "RU")
-    # source = translate_deeplx(text, "ID", "JA")!!!!!!!!!!!!!!!!!!
     print(source)
